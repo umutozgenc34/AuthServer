@@ -8,6 +8,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AuthServer.Repository\AuthServer.Repository.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Concrete\" />
   </ItemGroup>
 
 </Project>

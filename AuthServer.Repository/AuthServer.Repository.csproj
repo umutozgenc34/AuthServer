@@ -10,4 +10,8 @@
     <ProjectReference Include="..\AuthServer.Model\AuthServer.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Concretes\" />
+  </ItemGroup>
+
 </Project>
