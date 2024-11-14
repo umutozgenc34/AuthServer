@@ -2,7 +2,7 @@
 
 namespace AuthServer.Repository.Abstracts;
 
-internal interface IUnitOfWork
+public interface IUnitOfWork
 {
     Task<int> SaveChangesAsync();
 }
