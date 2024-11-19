@@ -11,6 +11,7 @@ public class DtoMapper : Profile
     public DtoMapper()
     {
         CreateMap<ProductDto,Product>().ReverseMap();
+        CreateMap<CreateProductRequest, Product>();
         CreateMap<UserAppDto,UserApp>().ReverseMap();
     }
 }

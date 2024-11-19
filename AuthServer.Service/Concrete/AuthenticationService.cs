@@ -22,9 +22,9 @@ public class AuthenticationService : IAuthenticationService
     private readonly ITokenService _tokenService;
     private readonly UserManager<UserApp> _userManager;
     private readonly IUnitOfWork _unitOfWork;
-    private readonly IGenericRepository<UserRefreshToken,int> _userRefreshTokenService;
+    private readonly IUserRefreshTokenService _userRefreshTokenService;
 
-    public AuthenticationService(IOptions<List<Client>> optionsClient, ITokenService tokenService, UserManager<UserApp> userManager, IUnitOfWork unitOfWork, IGenericRepository<UserRefreshToken,int> userRefreshTokenService)
+    public AuthenticationService(IOptions<List<Client>> optionsClient, ITokenService tokenService, UserManager<UserApp> userManager, IUnitOfWork unitOfWork, IUserRefreshTokenService userRefreshTokenService)
     {
         _clients = optionsClient.Value;
 
